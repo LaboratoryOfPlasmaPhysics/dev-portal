@@ -3,15 +3,53 @@
 /**
  * Basic styling
  */
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
+  height: 100%;
   font-weight: 300;
   color: #111;
   background-color: #fdfdfd;
+
   -webkit-text-size-adjust: 100%; }
 
+#content {
+
+  background-image: url(img/background.jpg);
+  width:  auto;
+  height: 100%;
+
+}
+
+.layer {
+    height: 100%;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    background-color: rgba(2, 34, 83, 0.54);
+    /*  background-color : linear-gradient(0deg, #4F364C, #FFFFFF); */
+
+}
+
+.section-content{
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+}
+
+#logo-col{
+  width : auto;
+}
+
+#title{
+  width : auto;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -45,8 +83,9 @@ ul, ol, dl, figure,
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-
 }
+
+
 /**
  * Images
  */
@@ -79,6 +118,10 @@ li > ol {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
+
+#title > h2, #title > h1 {
+  color : #fff;
+}
 
 /**
  * Links
@@ -183,7 +226,7 @@ body {
   background-color: #e6e6e6 !important; }
 
 #splash {
-  background-color: #2c5aa0;
+  background-color: rgb(1, 26, 68);
   background-size: cover !important; }
   #splash h2 {
     color: white;
