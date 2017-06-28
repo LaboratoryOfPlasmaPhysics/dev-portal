@@ -6,3 +6,7 @@ accueil/
 manage\.py
 
 *.zip
+
+hml5/static/bootstrap/js/
+
+hml5/static/bootstrap/img/
