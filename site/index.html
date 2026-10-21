@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LPP Developer Portal</title>
+<meta name="description" content="Developer services of the Laboratoire de Physique des Plasmas: code, continuous integration, notebooks and monitoring.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  Served by Apache with mod_include (Options +Includes, see README.md).
+  Visitors from these networks also get partials/internal-*.html; nobody else
+  receives them. Without mod_include nothing is included: it fails closed.
+  Edit this one line to change who counts as internal.
+-->
+<!--#if expr="-R '129.104.0.0/16' || -R '134.157.77.0/24'" --><!--#set var="LPP_INTERNAL" value="1" --><!--#endif -->
+<header class="hero">
+  <svg class="field" aria-hidden="true" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round">
+    <path d="M-40 300 C 260 120, 520 80, 760 180 S 1220 330, 1500 120" stroke="#3FA9F5" stroke-opacity="0.35" stroke-width="1.5"/>
+    <path d="M-40 330 C 300 170, 560 140, 800 220 S 1240 360, 1500 170" stroke="#3FA9F5" stroke-opacity="0.22" stroke-width="1.2"/>
+    <path d="M-40 260 C 220 70, 480 20, 720 130 S 1200 300, 1500 70" stroke="#5FD3F0" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M-40 360 C 340 220, 600 200, 840 260 S 1260 380, 1500 220" stroke="#3FA9F5" stroke-opacity="0.12" stroke-width="1"/>
+    <ellipse cx="1150" cy="150" rx="210" ry="90" stroke="#5FD3F0" stroke-opacity="0.16" stroke-width="1" transform="rotate(-14 1150 150)"/>
+    <ellipse cx="1150" cy="150" rx="150" ry="60" stroke="#5FD3F0" stroke-opacity="0.22" stroke-width="1" transform="rotate(-14 1150 150)"/>
+  </svg>
+  <div class="wrap">
+    <div class="topbar">
+      <img src="img/logo-lpp.png" alt="LPP — Laboratoire de Physique des Plasmas">
+      <a class="pill-link" href="https://www.lpp.polytechnique.fr">lpp.polytechnique.fr
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+    </div>
+    <div class="intro">
+      <span class="label">Laboratoire de Physique des Plasmas</span>
+      <h1>Developer Portal</h1>
+      <p>Code, continuous integration, notebooks and monitoring for LPP's software teams.</p>
+<!--#if expr="v('LPP_INTERNAL') == '1'" --><!--#include virtual="partials/internal-banner.html" --><!--#endif -->
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <span class="label">Services</span>
+    <div class="cards">
+      <a class="card" href="https://github.com/LaboratoryOfPlasmaPhysics">
+        <span class="logo"><img src="img/github.svg" alt=""></span>
+        <span class="text"><span class="name">GitHub</span><span class="desc">Our code repositories.</span><span class="addr">github.com/LaboratoryOfPlasmaPhysics</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <a class="card" href="/redmine" style="--tint: #FBEDEE">
+        <span class="logo"><img src="img/redmine.svg" alt=""></span>
+        <span class="text"><span class="name">Redmine</span><span class="desc">Project management, bug tracker, wiki.</span><span class="addr">/redmine</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <a class="card" href="/teamcity/">
+        <span class="logo"><img src="img/teamcity.svg" alt=""></span>
+        <span class="text"><span class="name">TeamCity</span><span class="desc">Continuous integration and builds.</span><span class="addr">/teamcity</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <a class="card" href="/jupyter" style="--tint: #FEF1E8">
+        <span class="logo"><img src="img/jupyter.svg" alt=""></span>
+        <span class="text"><span class="name">JupyterHub</span><span class="desc">Notebooks hosted at LPP.</span><span class="addr">/jupyter</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <a class="card" href="/grafana" style="--tint: #FEF0E5">
+        <span class="logo"><img src="img/grafana.svg" alt=""></span>
+        <span class="text"><span class="name">Grafana</span><span class="desc">Monitoring dashboards.</span><span class="addr">/grafana</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <a class="card" href="https://matrix.to/#/!aMGyiNNXheOhQByCcN:matrix.org?via=matrix.org">
+        <span class="logo"><img src="img/matrix.svg" alt=""></span>
+        <span class="text"><span class="name">Matrix</span><span class="desc">Chat with the team.</span><span class="addr">matrix.to</span></span>
+        <svg class="go" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+<!--#if expr="v('LPP_INTERNAL') == '1'" --><!--#include virtual="partials/internal-services.html" --><!--#endif -->
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>LPP — CNRS, École polytechnique, Sorbonne Université, Observatoire de Paris, Université Paris-Saclay</span>
+    <span class="host">hephaistos.lpp.polytechnique.fr</span>
+  </div>
+</footer>
+</body>
+</html>
